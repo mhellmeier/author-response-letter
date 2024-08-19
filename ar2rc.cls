@@ -1,6 +1,7 @@
 % An article class for author response to reviewer comment.
 % Copyright (C) 2017 Martin Schroen
 % Modifications Copyright (C) 2020 Kaishuo Zhang
+% Modifications Copyright (C) 2024 Malte Hellmeier
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -99,16 +100,17 @@ innerleftmargin=0.6em,innerrightmargin=0.6em]{quote}
 % Define title defaults if not defined by user
 \providecommand{\lettertitle}{Authors' Response to Reviews of}
 \let\@journal\@empty
-\let\@doi\@empty
+\let\@pubnumber\@empty
 \newcommand{\journal}[1]{\gdef\@journal{#1}}
-\newcommand{\doi}[1]{\gdef\@doi{#1}}
+\newcommand{\pubnumber}[1]{\gdef\@pubnumber{#1}}
 
 % Make title and legend
 \renewcommand\maketitle{
 {\Large\bf \lettertitle}\\[1em]
 {\LARGE \@title}\\[1em]
 {\@author}\\
-{\it \@journal, }\texttt{\@doi}\\
+{\it \@journal}, Submission No. \texttt{\@pubnumber}\\
 \hrule
 \hfill {\bfseries RC:} \textbf{\textit{Reviewers' Comment}},\(\quad\) AR: Authors' Response, \(\quad\square\) Manuscript Text
+\ \\
 }

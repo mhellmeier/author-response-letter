@@ -1,6 +1,7 @@
 % An example for the ar2rc document class.
 % Copyright (C) 2017 Martin Schroen
 % Modifications Copyright (C) 2020 Kaishuo Zhang
+% Modifications Copyright (C) 2024 Malte Hellmeier
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -18,13 +19,15 @@
 \documentclass{ar2rc}
 
 \title{The Dark Side of Light}
-\author{A. Einstein}
-\journal{Some Journal}
-\doi{12345}
+\author{A. Einstein, I. Newton, G. Galilei}
+\journal{Some Journal/Conference}
+\pubnumber{12345}
 
 \begin{document}
 
 \maketitle
+
+\textbf{We would like to thank all reviewers for their time and effort in helping us improve our paper based on their constructive comments. We greatly appreciate the feedback and took it very seriously to create a revised version. The authors' responses to the reviewers' comments are addressed below, structured by each reviewer.}
 
 \section{Reviewer \#1}
 
@@ -41,11 +44,11 @@
 \AR Ok, I changed this:
 
 \begin{quote}
-The cat in the box is \DIFdelbegin \DIFdel{dead}\DIFdelend \DIFaddbegin \DIFadd{alive}\DIFaddend .
-\begin{align}
-E &= mc^2 \\
-m\cdot \DIFdelbegin \DIFdel{a=F}\DIFdelend \DIFaddbegin \DIFadd{v=p}\DIFaddend .
-\end{align}
+	The cat in the box is \DIFdelbegin \DIFdel{dead}\DIFdelend \DIFaddbegin \DIFadd{alive}\DIFaddend .
+	\begin{align}
+		E &= mc^2 \\
+		m\cdot \DIFdelbegin \DIFdel{a=F}\DIFdelend \DIFaddbegin \DIFadd{v=p}\DIFaddend .
+	\end{align}
 \end{quote}
 
 But I actually have no idea what you were talking about.
